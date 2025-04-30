@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=" utf-8" />
+    <title> Mokepon battle Copy 3 Oct</title>
+    <link rel="stylesheet" href="./csscopy/moqueponcopy.css">
+</head>
+<body>
+
+
+    </section>
+    <section id="sectioninicio">
+        <h1 class="titulo">Mokepon battle🔥💧🌱</h1>
+        <br>
+        <br>
+        <button id="botoninicio">
+            <p id="startgame">Start Game</p>
+        </button>
+
+
+    </section>
+    <section id="sectionmascota">
+        <h1 class="titulo">Mokepon battle🔥💧🌱</h1>
+        <h2 class="seleccionarmascota">Choose One: </h2>
+        <!-- <div class="inputmascota">
+            se va a sustituir por un div dinámico
+            <input type="radio" name="mascota" id="eaux">
+            <label for="eaux" class="botonmascota">
+                <p> Eaux: </p>
+                <img src="./css/magua.webp" id="eauximg">
+            </label>
+            <input type="radio" name="mascota" id="dimondust">
+            <label for="dimondust" class="botonmascota">
+                <p> Dimondust: </p>
+                <img src="./css/mtierra.png">
+            </label>
+            <input type="radio" name="mascota" id="ignity">
+            <label for="ignity" class="botonmascota">
+                <p> Ignity: </p>
+                <img src="./css/mfuego.png">
+            </label>
+        </div> -->
+        <div id="inputmascota"></div>
+        <br>
+        <button id="botonseleccionar">
+            <p id="seleccionar"> Seleccionar </p>
+        </button>
+
+
+    </section>
+    <section id="sectionmapa">
+        <!-- <h1 class="titulo">Mokepon battle🔥💧🌱</h1> -->
+        <h2 class="seleccionarmascota"> Flow through the map: </h2>
+        <canvas id="mapa" width="3000" height="1500"></canvas>  <!-- era el tamaño del canva lo que hacia pixelar la imagen, desde el html se modifica -->
+
+
+ 
+        <button class="botonesmover" id="flechaarriba">
+            <img src="./csscopy/flecha-arriba.png" class="imagenflecha" id="flechaarriba">
+        </button>
+        <div id="botonesabajo">
+        <button class="botonesmover" id="flechaizquierda">
+            <img src="./csscopy/flecha-izquierda.png" class="imagenflecha" id="flechaizquierda">
+        </button>
+        <button class="botonesmover"  id="flechaabajo">
+            <img src="./csscopy/flecha-abajo.png" class="imagenflecha" id="flechaabajo">
+        </button>
+        <button class="botonesmover"  id="flechaderecha">
+            <img src="./csscopy/flecha-derecha.png" class="imagenflecha" id="flechaderecha">
+        </button>
+        </div>
+
+        
+
+        
+
+    </section>
+    <section id="sectionataque">
+        <br>
+        <h1 class="titulo">Mokepon battle🔥💧🌱</h1>
+        <h2 class="eligeataque"> Elige ataque: </h2>
+        <!-- <p class="mascotayvida"> Tú mascota: <span id="nombretumascota"></span>   , Mascota rival: <span id="mascotarival"> mascotaenemigo</span></p>
+
+            <p class="mascotayvida">Vidas: <span id="tuvida">❤️❤️❤️ </span>, Vidas Rival: <span id="vidarival">❤️❤️❤️</span></p> 
+            
+        -->
+        <br>
+        <div class="botonesataque" id="botonataque">
+
+            <!-- <button class="botonataque" id="botonfuego"> 🔥🔥🔥 </button>
+            <button class="botonataque" id="botonagua"> 💧💧💧 </button>
+            <button class="botonataque" id="botontierra"> 🌱🌱🌱 </button>
+            <button class="botonataque" id="elboton"> Botoonn!!</button> -->
+        </div class="botonesataque">
+        <br>
+        <br>
+        <!-- Aqui vamos a usar el CSS grid, con el cual queremos que en una fila se encuentre columnas
+
+                tendremos 3 columnas: una para tu ataque, uno con un vs nomas y otra con el ataque rival 
+                quiero el mismo diseño, solo quiero aplicar el grid 
+
+                dentro de cada columna queremos: vida y ataque, en el de enmedio queremos el "vs" y el resultado
+
+                las vidas dentro de las columnas no me gustan, seguramente lo deje como esta
+
+
+                Tampoco me gusta el resultado dentro de la caja vs
+
+                y ella tambien agrega el nombre de la mascota dentro de la columna, no es mala idea, pero visualmente no me convence tampoco
+
+
+
+                arriba esta comentado el codigo que se cambió ( la zona de mascota y vida)
+                y abajo esta el de aatque y resultado
+
+
+
+
+
+            
+            -->
+        <div id="tuataqueyrival">
+
+            <div class="columnatuataque">
+                <p class="mascotayvida">Tus Medallas: <span id="tuvida"> </span></p>
+                <p class="mascotayvida"> Tú mascota: <span id="nombretumascota"></span> </p>
+                <p class="mascotayvida"> Tu ataque:<span id="tuataque">-</span> </p>
+            </div>
+            <div class="columnaresultado">
+                <p class="ataque">⚔️ VS ⚔️</p>
+                <p><span id="resultado"></span></p>
+            </div>
+            <div class="columnaataquerival">
+                <p class="mascotayvida"> Medallas Rival: <span id="vidarival"> </span></p>
+                <p class="mascotayvida">Mascota rival: <span id="mascotarival"> mascotaenemigo</span></p>
+                <p class="mascotayvida">Ataque rival:<span id="ataquerival">-</span></p>
+            </div>
+            <div class="resumenabajo">
+                <br>
+                <p>
+                    Resumen🔻
+                </p>
+            </div>
+        </div>
+        <!-- Así estaba antes del Css grid, me gustaba bastante, pero ni modos, por aprender 
+
+
+            <div id="tuataqueyrival">
+             
+            <p class="ataque"> Tu ataque:<span id="tuataque">-</span> </p>
+            <p class="ataque">⚔️ VS ⚔️</p>
+            <p class="ataque">Ataque rival:<span id="ataquerival">-</span></p>
+
+            
+            <div/>
+
+            <p><span id="resultado"></span></p>
+ -->
+    </section>
+    <section id="sectionreset">
+
+        <button id="botonreset">
+            <p id="reset"> Press to play again</p>
+        </button>
+        <br>
+        <br>
+
+
+
+        <div id="ltuataqueyrival">
+            <p class="lataque"> Tu último ataque:<span id="ltuataque">-</span> </p>
+            <p class="lataque">⚔️ VS ⚔️</p>
+            <p class="lataque">Último ataque rival:<span id="lataquerival">-</span></p>
+        </div>
+
+        <br>
+        <br>
+
+        <p> Se acabó, <span id="resultadofinal"></span></p>
+
+
+        <br>
+
+        <br>
+        <p>
+            Resumen abajo 🔻
+        </p>
+
+    </section>
+    <section id="sectionmensajes">
+
+        <h2 id="resumenbatalla">
+            Resumen de la batalla: ⚔️
+
+
+        </h2>
+
+
+
+    </section>
+    <script src="./moqueponcopy.js"> </script>
+</body>
+</html>

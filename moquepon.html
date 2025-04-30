@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=" utf-8" />
+    <title> Mokepon battle </title>
+    <link rel="stylesheet" href="./css/moquepon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+<body>
+    </section>
+    <section id="sectioninicio">
+        <h1 class="titulo">Mokepon battle🔥💧🌱</h1>
+        <br>
+        <br>
+        <button id="botoninicio">
+            <p id="startgame">Start Game</p>
+        </button>
+
+
+    </section>
+    <section id="sectionmascota">
+        <h1 class="titulo">Mokepon battle🔥💧🌱</h1>
+        <h2 class="seleccionarmascota">Choose One: </h2>
+        <div id="inputmascota"></div>
+        <br>
+        <button id="botonseleccionar">
+            <p id="seleccionar"> Seleccionar </p>
+        </button>
+    </section>
+    <section id="sectionmapa">
+        <h2 class="seleccionarmascota"> Flow through the map: </h2>
+        <canvas id="mapa"></canvas> 
+        <button onmousedown="moverarriba()" onmouseup="detenermov()" class="botonesmover">
+            <img src="./css/flecha-arriba.png" class="imagenflecha" id="flechaarriba">
+        </button>
+        <div id="botonesabajo">
+        <button onmousedown="moverizquierda()" onmouseup="detenermov()" class="botonesmover">
+            <img src="./css/flecha-izquierda.png" class="imagenflecha" id="flechaizquierda">
+        </button>
+        <button  onmousedown="moverabajo()" onmouseup="detenermov()" class="botonesmover" >
+            <img src="./css/flecha-abajo.png" class="imagenflecha" id="flechaabajo">
+        </button>
+        <button onmousedown="moverderecha()" onmouseup="detenermov()" class="botonesmover"  >
+            <img src="./css/flecha-derecha.png" class="imagenflecha" id="flechaderecha">
+        </button>
+        </div>
+    </section>
+    <section id="sectionataque">
+        <br>
+        <h1 class="titulo">Mokepon battle🔥💧🌱</h1>
+        <h2 class="eligeataque"> Elige ataque: </h2>
+        <br>
+        <div class="botonesataque" id="botonataque">
+        </div class="botonesataque">
+        <br>
+        <br>
+        <div id="tuataqueyrival">
+            <div class="columnatuataque">
+                <p class="mascotayvida">Tus Medallas: <span id="tuvida"> </span></p>
+                <p class="mascotayvida"> Tú mascota: <span id="nombretumascota"></span> </p>
+                <p class="mascotayvida"> Tu ataque:<span id="tuataque">-</span> </p>
+            </div>
+            <div class="columnaresultado">
+                <p class="ataque">⚔️ VS ⚔️</p>
+                <p><span id="resultado"></span></p>
+            </div>
+            <div class="columnaataquerival">
+                <p class="mascotayvida"> Medallas Rival: <span id="vidarival"> </span></p>
+                <p class="mascotayvida">Mascota rival: <span id="mascotarival"> mascotaenemigo</span></p>
+                <p class="mascotayvida">Ataque rival:<span id="ataquerival">-</span></p>
+            </div>
+        </div>
+        <div class="resumenabajo">
+            <br> <!-- esto se puede borrar pero el css ya esta diseñado con estos espacios -->
+            <p>
+                Resumen🔻
+            </p>
+        </div>
+        
+    </section>
+    <section id="sectionreset">
+        <button id="botonreset">
+            <p id="reset"> Press to go back the map</p>
+        </button>
+        <br>
+        <br>
+        <div id="ltuataqueyrival">
+            <p class="lataque"> Tu último ataque:<span id="ltuataque">-</span> </p>
+            <p class="lataque">⚔️ VS ⚔️</p>
+            <p class="lataque">Último ataque rival:<span id="lataquerival">-</span></p>
+        </div>
+        <br>
+        <br>
+        <p> Se acabó, <span id="resultadofinal"></span></p>
+        <br>
+        <br>
+        <p>
+            Resumen abajo 🔻
+        </p>
+    </section>
+    <section id="sectionmensajes">
+        <h2 id="resumenbatalla">
+            Resumen de la batalla: ⚔️
+        </h2>
+    </section>
+    <section id="sectionvictoria">
+        <h1 id="titulofinal">Mokepon battle🔥💧🌱</h1>
+        <div  id="cuadrovictoria">
+            <h2>
+                You just stepped over all the enemies!
+            </h2>
+            <h2>
+                My respects🫡
+            </h2>
+            <div id="imgmascota">
+            </div>
+            <img src="./css/trofeo.png" id="trofeo">
+
+            <button id="resetfinal">
+                Click to reload
+            </button>
+        </div>
+    </section>
+    <script src="./js/moquepon.js"> </script>
+</body>
+</html>

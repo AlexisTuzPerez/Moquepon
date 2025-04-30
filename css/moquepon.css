@@ -1,0 +1,594 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+.titulo{
+    color:white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 150px;
+    padding: 10px; 
+    box-sizing: border-box;
+    border: 20px double violet;
+    border-radius: 20px;
+}
+body{
+    font-family: 'Press Start 2P';
+}
+button{
+    font-family: 'Press Start 2P';
+}
+#sectioninicio{
+    background-image: url(./Fondoinicio.png);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#botoninicio{   
+    background-color: black;
+    box-sizing: border-box;
+    border: 5px solid violet;
+    width: 300px;
+    height: 75px;  
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#botoninicio:hover{
+    border-color: white;
+}
+#sectionmascota {
+    background-image: url(./Fondosinmascotas.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seleccionarmascota{
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+}
+#inputmascota{
+    display: grid;
+    margin: 20px 0px 20px 0px;
+    grid-template-columns: repeat(3, auto);
+}
+.botonmascota{  
+    color: white;
+    font-size: 12px;
+    width: 240px;
+    height: 80px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;             
+    box-sizing: border-box;      
+    margin: 15px 20px 15px 20px;   
+    border: 7px dashed violet;      
+    border-radius: 10px;
+}
+.botonmascota img{  
+    width: 70px;
+}
+.botonmascota:hover img{   
+    width: 100px;
+}
+.botonmascota #Eaux{ 
+    width: 50px;   
+}
+.botonmascota:hover #Eaux{  
+    width: 80px;   
+}
+.botonmascota:hover{
+    border-color: white;
+    backdrop-filter: blur(1px);
+    height: 80px;        
+    width: 240px;
+    box-sizing: border-box; 
+}
+.botonmascota p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[name="mascota"]:checked + label{       
+    border-color: white;
+}
+input{            
+    display: none;
+}
+#botonseleccionar{
+    color: white;
+    background-color: black;
+    height: 75px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 5px solid violet;
+    border-radius: 10px;  
+}
+#botonseleccionar:hover{
+    border-color: white;
+}
+#seleccionar{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionmapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(./Fondosinmascotas.png);
+    background-position: center;
+    background-size: cover;
+}
+#mapa{
+    /* width: 1000px;    
+    height: 400px;  */
+    background-color: black;
+    border: 20px violet double;
+    border-radius: 20px;
+    margin: 0px 20px 10px 20px
+}
+#botonesabajo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonesmover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: 60px;
+    width: 70px;
+    background-color: black;
+    border: 5px solid violet;
+    border-radius: 12px;
+}
+.imagenflecha{
+    width: 35px;
+    height: 30px;
+}
+.botonesmover:active{
+    border-color: white;
+}
+#sectionataque{
+    color: white;
+    background-image: url(./Diseño\ sin\ título.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+    background-color: beige;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mascotayvida{
+    background-color: transparent;
+    width: 370px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border: 5px solid violet;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mascotayvida img{
+    width: 50px;
+}
+.eligeataque{
+    background-color: black;
+    font-size: 22px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px 40px 5px 40px;
+    border: 6px solid violet;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonataque{   
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    width: 140px;
+    height: 60px;
+    box-sizing: border-box;
+    margin: 10px 20px;
+    padding: 10px;
+    border: 6px dashed violet;
+    border-radius: 10px;
+}
+.botonataque:hover{
+    border-color: white;
+    font-size: 30px;
+    backdrop-filter: blur(1px);
+}
+.botonesataque{
+    display: flex;
+    flex-direction: row; 
+}
+#tuataqueyrival{
+    display: grid;
+    grid-template-columns:  3.5fr 1fr 3.5fr;
+    margin: 0px 40px 40px 40px;
+}
+.columnatuataque{
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0px 15px 0px 15px;
+}
+.columnaresultado{
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    width: auto;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0px 15px 0px 15px;
+}
+.columnaataquerival{
+    grid-area: 1 / 3 / 4 / 4;
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0px 15px 0px 15px;
+}
+.resumenabajo{
+    grid-area: 4 / 2 / 5 / 3 ;
+    display: flex;
+    flex-direction: row;
+
+}
+#ltuataqueyrival{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 65px;
+    width: 1200px;
+}
+.lataque, #resultadofinal{
+    margin: 0px 15px 0px 15px;
+    font-size: 18px;
+}
+#sectionmensajes{
+    color: white;
+    background-image: url(./Fondosinmascotas.png);
+    background-color: black;
+    display: flex;
+    gap:50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sectionreset{
+    color: white;
+    background-image: url(./Fondoinicio.png);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                      
+    justify-content: center;                   
+}
+#botonreset{
+    color: white;
+    background-color: black;
+    width: 600px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 20px double violet;
+    border-radius: 20px;
+}
+#botonreset:hover{
+    border-color: white;
+}
+#reset{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionvictoria{
+    background-image: url(./Fondosinmascotas.png);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cuadrovictoria{
+    color:white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 85vh;
+    padding: 10px; 
+    box-sizing: border-box;
+    border: 20px groove gold;
+    border-radius: 20px;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+    margin: 0px 10px 20px 10px;
+}
+#imgvictoria {
+    margin-top: 20px;
+    width: 120px;   
+}
+#trofeo{
+    width: 200px;
+}
+#resetfinal{  
+    border: 7px dashed violet;
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+#resetfinal:hover{
+    border-color: gold;
+}
+#titulofinal{
+    display: flex;
+    color:white;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;  
+}
+@media (max-width: 900px){
+    #inputmascota{
+        display: flex;
+        flex-direction: column;
+    }
+    .botonmascota{
+        width: auto;
+        height: 25px;
+        margin: 10px;
+    }
+    .botonmascota:hover{
+        width: auto;
+        height: 25px;
+    }
+    .inputmascota{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        font-size: 10x;
+    }
+    button, #botoninicio{
+        font-size: 18px;
+        width: auto;
+        height: auto;
+    }
+    #botonreset{
+        font-size: 30px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+     }
+    section{
+        width: auto;
+        height: auto;
+    }
+    .seleccionarmascota{
+        font-size: 15px;
+    }
+    .titulo{
+        font-size: 30px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin: 0px 40px 0px 40px;
+    }
+    .eligeataque{
+        font-size: 15px;
+        width: auto;
+        height: auto;
+        padding: 5px;
+    }
+    .botonesataque{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto; 
+        margin: 2px 2px;
+        padding: 0px;
+    }
+    #elboton{
+        display: none;
+        color: transparent;
+        border-color: transparent;
+    }
+    .botonataque{
+        color: white;
+        font-size: 18px;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 10px;
+        border: 6px dashed violet;
+        border-radius: 10px;
+    }
+    .botonataque:hover{
+        border-color: white;
+        font-size: 20px;
+        backdrop-filter: blur(1px);
+    }
+    #tuataqueyrival{
+        display: grid;
+        grid-template-columns:  minmax(auto, 300px);   
+        grid-template-rows:   repeat(4, 100px) ;
+       width: auto;
+       height: auto;
+    }
+    .columnatuataque{
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: transparent;
+        border: 6px solid violet;
+        border-radius: 10px;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .columnaataquerival{
+        grid-area: 2 / 1 / 3 /2;
+        background-color: transparent;           
+        border: 6px solid violet;
+        border-radius: 10px;
+        box-sizing: border-box;    
+        width: auto;
+        height: auto;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        margin: 0px;
+        padding: 0px;    
+    }
+    .columnaresultado{
+        grid-area: 3 / 1 / 4 / 2;
+        z-index: 1;
+        background-color: transparent;  
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 5px;
+    }
+    .resumenabajo{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .mascotayvida{
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        padding: 0px;
+        margin:0x;
+        border: 0px dashed transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #resultado{
+        display: flex;
+        align-items: center;
+        justify-content:  center;
+        font-size: 30px;
+        color: gray;
+        color: blur(10px);
+    }
+    #sectionreset{
+        font-size: 10px;
+    }
+    #botonreset{
+        margin: 0px 40px 0px 40px;
+    }
+    #ltuataqueyrival{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .lataque, #resultadofinal{
+        font-size: 10px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    #cuadrovictoria{
+        width: auto;
+        margin: 20px 20px 20px 20px;
+        font-size: 10px;
+    }
+    #trofeo{
+        width: 150px;
+    }
+    #mapa{
+        /* width: 300px;
+        height: 150px; */
+        border: 5px violet double;
+        margin: 50px 0px 50px 0px ;
+    }
+    .mascotayvida img{
+        width: 15px;
+    }
+    .botonesmover{
+        height: 50px;
+        width: 58.33px;
+    }
+}
